@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Send params from HTTP GET-URL Request</title>
+</head>
+<body>
+<h1>Send params from HTTP GET-URL Request</h1>
+<ul>
+<li>
+<a th:href="@{/params/string(text='Konnichiwa Yoruichi sama')}">/params/string?text=Konnichiwa Yoruichi sama </a>
+</li>
+<li>
+<a th:href="@{/params/string(text='Yoroshiku onegaishimasu')}">/params/string?text=Yoroshiku onegaishimasu </a>
+</li>
+<li>
+<a th:href="@{/params/mix-params(greetings='O genki desu ka', number=7)}">/params/mix-params?greetings=o genki desu ka&number=7</a>
+</li>
+<li>
+<a th:href="@{/params/mix-params-request(greetings='O genki desu ka', number=7)}">/params/mix-params-request?greetings=o genki desu ka&number=7</a>
+</li>
+</ul>
+</body>
+</html>
