@@ -21,3 +21,9 @@
 #### thymeleaf
 @{} --> to add links in html file.
 ![Req](images/req-param.png)
+
+#### Deployment
+1. add to JAVA_HOME 
+2. ./mvnw package (to generate .jar --> /target/spring-boot-web-0.0.1.SNAPSHOT.jar)
+3. java -jar ./target/spring-boot-web-0.0.1.SNAPSHOT.jar
+- other option to point 3: ./mvnw spring-boot:run

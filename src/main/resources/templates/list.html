@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}"></title>
+</head>
+<body>
+<h1 th:text="${title}"></h1>
+ <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frieren</td>
+                <td>Elf</td>
+                <td>frieren@email.com</td>
+            </tr>
+            <tr>
+                <td>Nezuko</td>
+                <td>Kamado</td>
+                <td>nezuko@email.com</td>
+            </tr>
+            <tr>
+                <td>Killua</td>
+                <td>Zoldyck</td>
+                <td>killua@email.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
